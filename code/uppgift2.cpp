@@ -33,7 +33,7 @@ int main() {
 
 	// "../code/uppgift2-input-short.txt"
 	// "../code/uppgift2-input-large.txt"
-	std::ifstream in_file("../code/uppgift2-input-example.txt");
+	std::ifstream in_file("../code/uppgift2-input-large.txt");
 	std::ofstream out_file("../code/uppgift2-output.txt");
 
 

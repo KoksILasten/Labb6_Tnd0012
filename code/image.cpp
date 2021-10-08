@@ -34,15 +34,15 @@ Image get_compressed_Image(std::ifstream& file) {
 }
 
 void write_Image(Image& img, std::ofstream& file) {
-	Image I;
+	size_t size = img.Image_data.size();
 
-	for (size_t i = 0; i < I.Image_data.size(); i++) {
+	for (size_t i = 0; i < img.Image_data.size(); i++) {
 
-		if (i % I.Image_dim_h == 0) {
-			std::cout << std::endl;
+		if (i % img.Image_dim_w == 0) {
+			file << std::endl;
 		}
 
-		file << I.Image_data[i];
+		file << img.Image_data[i];
 
 	}
 
