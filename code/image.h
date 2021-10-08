@@ -6,7 +6,10 @@
 
 // ADD new data type Image to represent a decompressed image
 struct Image {
-	// ADD code
+	int Palette_size;
+	int Palette;
+	int Image_dim;
+	int Image_data;
 };
 
 

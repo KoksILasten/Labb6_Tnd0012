@@ -10,7 +10,9 @@
 
 // ADD new data type Movie
 struct Movie {
-    // ADD CODE
+    std::string name;
+    std::string type;
+    int year;
 };
 
 // Read a movie (name, number of copies, type) from file

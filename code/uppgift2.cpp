@@ -20,16 +20,20 @@ Generated output: uppgift-output-example.txt
 ``````````````
 */
 
-/*
-* Input image files:
-* "../code/uppgift2-input-example.txt"
-* "../code/uppgift2-input-short.txt"
-* "../code/uppgift2-input-large.txt"
-*/
+
+// Input image files:
 
 #include <iostream>
 #include <fstream>
 
 #include "image.h"
 
-// ADD CODE: main
+int main(){
+
+	// "../code/uppgift2-input-short.txt"
+	// "../code/uppgift2-input-large.txt"
+	std::ifstream in_file("../code/uppgift2-input-example.txt");
+	std::ofstream out_file("../code/uppgift2-output");
+
+	std::vector<Image> db = 
+}
