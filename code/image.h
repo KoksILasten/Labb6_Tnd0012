@@ -6,17 +6,11 @@
 
 // ADD new data type Image to represent a decompressed image
 struct Image {
-	int Palette_size;
-	int Palette;
-	int Image_dim;
-	int Image_data;
+	int Image_dim_w = 0;
+	int Image_dim_h = 0;
+	std::vector<char> Image_data;
 };
 
+Image get_compressed_Image(std::ifstream& file);
 
-// Read a compressed image from file in
-// Return a value of type Image representing the decompressed image
-// ADD function declaration
-
-
-// Write a decompressed image to file out
-// ADD function declaration
+void write_Image(Image& img, std::ofstream& file);

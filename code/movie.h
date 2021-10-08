@@ -12,7 +12,7 @@
 struct Movie {
     std::string name;
     std::string type;
-    int year;
+    int year = 0;
 };
 
 // Read a movie (name, number of copies, type) from file
